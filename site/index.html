@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>개발 워크스테이션 · 미션 1</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, "Malgun Gothic", sans-serif; color: #142e38; background: #f2f6f5; }
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 64px 24px; }
+    main { max-width: 1000px; margin: auto; }
+    .eyebrow { color: #126a56; font-weight: 750; letter-spacing: .13em; font-size: 13px; }
+    h1 { font-size: clamp(32px, 5vw, 54px); line-height: 1.2; margin: 20px 0; letter-spacing: -.045em; }
+    .intro { font-size: 19px; line-height: 1.8; max-width: 720px; color: #45616b; }
+    .status { display: inline-flex; gap: 9px; align-items: center; padding: 10px 16px; background: #d9eee5; color: #155d48; border-radius: 24px; font-weight: 700; margin: 16px 0 30px; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: #167650; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    article { border: 1px solid #d6e3df; background: white; border-radius: 18px; padding: 25px; }
+    article small { color: #548578; font-weight: 750; }
+    h2 { font-size: 22px; margin: 14px 0; }
+    article p { line-height: 1.8; color: #45616b; margin-bottom: 0; }
+    .flow { margin-top: 26px; border-radius: 16px; padding: 22px; color: #dff4ed; background: #173f40; line-height: 1.9; }
+    code { font-family: ui-monospace, Consolas, monospace; }
+    footer { margin-top: 28px; line-height: 1.8; font-size: 14px; color: #5b747b; }
+    @media (max-width: 700px) { body { padding: 32px 18px; } .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main data-project="codyssey-mission-1">
+    <div class="eyebrow">CODYSSEY / DEVELOPMENT WORKSTATION</div>
+    <h1>내 컴퓨터에서 시작하는<br>개발 워크스테이션</h1>
+    <p class="intro">Dockerfile로 만든 이미지 안에서 NGINX가 이 웹페이지를 제공합니다. 브라우저가 이 화면을 받았다면, 호스트의 포트와 컨테이너의 웹 서버가 연결된 것입니다.</p>
+    <div class="status"><span class="dot"></span>NGINX 정적 웹페이지</div>
+    <div class="grid">
+      <article><small>01 · IMAGE</small><h2>실행 환경을 묶기</h2><p>공식 NGINX 이미지를 바탕으로 이 페이지를 복사합니다. 이미지를 다시 실행해도 같은 콘텐츠를 제공합니다.</p></article>
+      <article><small>02 · PORT</small><h2>브라우저와 연결하기</h2><p>PC의 포트를 컨테이너 내부 80번 포트에 연결합니다. 실행 로그와 주소창을 함께 확인합니다.</p></article>
+      <article><small>03 · STORAGE</small><h2>변경과 데이터를 확인하기</h2><p>바인드 마운트로 파일 변경을 확인하고, 별도 볼륨으로 컨테이너 삭제 후 데이터가 남는지 실습합니다.</p></article>
+    </div>
+    <div class="flow"><strong>요청이 도착하는 경로</strong><br>브라우저 → PC의 공개한 로컬 포트 → 컨테이너의 <code>80</code>번 포트 → <code>index.html</code></div>
+    <footer>미션 1 실습용 페이지입니다. 실제 실행 명령, 검증 결과와 작업 지원 범위는 GitHub 저장소의 README와 evidence에서 확인할 수 있습니다.</footer>
+  </main>
+</body>
+</html>
