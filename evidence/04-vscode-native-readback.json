@@ -1,0 +1,27 @@
+{
+  "window_title": "릴리스 정보: 1.142.0 - dev-workstation-mission - Visual Studio Code",
+  "snapshot": "s0000000a",
+  "observed_at": "2026-10-29T11:57:02.236Z",
+  "evidence": [
+    {
+      "role": "Group",
+      "label": "dev-workstation-mission (Git) - main*, 분기/태그 체크 아웃..."
+    },
+    {
+      "role": "Button",
+      "label": "dev-workstation-mission (Git) - main*, 분기/태그 체크 아웃..."
+    },
+    {
+      "role": "Group",
+      "label": "dev-workstation-mission (Git) - 변경 내용 동기화"
+    },
+    {
+      "role": "Button",
+      "label": "dev-workstation-mission (Git) - 변경 내용 동기화"
+    },
+    {
+      "role": "MenuItem",
+      "label": "pjmin19 (GitHub)"
+    }
+  ]
+}

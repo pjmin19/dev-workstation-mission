@@ -1,0 +1,15 @@
+{
+  "run_id": "codyssey-m1-20261029205726",
+  "image": "codyssey-workstation:codyssey-m1-20261029205726",
+  "ports": [
+    18881,
+    18882
+  ],
+  "verified": true,
+  "volume_hash_before": "c9fccc927433657eeaad6e0c66e2aafddf9fd350cf225104077b97eb5e0262af  /data/proof.txt",
+  "volume_hash_after": "c9fccc927433657eeaad6e0c66e2aafddf9fd350cf225104077b97eb5e0262af  /data/proof.txt",
+  "bind_before": "bind-before",
+  "bind_after": "bind-after",
+  "executor": "Codex under owner instruction",
+  "formal_evaluation_pass": false
+}
